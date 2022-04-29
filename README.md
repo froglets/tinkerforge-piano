@@ -42,3 +42,10 @@ cmake .. -G "Unix Makefiles" -DCMAKE_TOOLCHAIN_FILE=conan_toolchain.cmake
 cmake --build .
 ./tinkerforgePiano
 ```
+
+**Notes**
+-The linear potentiometer controls volume. 0 is the lowest volume. 100 effevtively mutes the beeper.
+-Piano keys are on two pieces of standard 8.5" x 11" printer paper.
+-Piano keys start 10mm from the IR sensors. They are 40mm wide, 2" tall, and 1" from the edge of the paper.
+-The IR sensors seem to have trouble beyond 600mm. Their maxiumum range is 800mm. The backstop is meant to ensure more reliable measurements. It's a few inches away from the edge of the second paper.
+-Hovering a finger above key that's close to the sensor is detected the same as placing your hand on a key that's farther away.
