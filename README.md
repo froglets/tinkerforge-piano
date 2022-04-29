@@ -3,12 +3,21 @@ This repo houses the code used to build a Tinkerforge piano using Conan C/C++ Pa
 
 ### Requirements
 
-Needed tools installed in your machine to run the examples:
+Tools installed on your machine and hardware necessary to run the examples:
 
 - Python with `pip` package manager installed
 - Conan: `pip install Conan` or download from https://conan.io/downloads
 - CMake: https://cmake.org/download
 - Compiler of choice: gcc, clang, apple-clang, visual studio
+- Tinkerforge [Brick Daemon](https://www.tinkerforge.com/en/doc/Software/Brickd.html#brickd-installation) and [Brick Viewer](https://www.tinkerforge.com/en/doc/Software/Brickv.html#brickv-installation)
+- Tinkerforge Hardware:
+  - 2 Master Bricks 3.1
+  - 2 Distance IR 10-80cm Brickets 2.0
+  - 1 Linear Poti Bricket 2.0
+  - 1 Piezo Speaker Bricket 2.0
+  - 1 LCD 128x64 Bricket 2.0
+  - 5 Bricklet Cables 15cm (7p-7p)
+  - 1 USB-C to USB-C Cable 200cm
 
 ### Building the examples
 
