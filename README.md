@@ -32,13 +32,7 @@ Configure the project and build the examples using CMake build system:
 ```
 cmake .. -G "Visual Studio 16" -DCMAKE_TOOLCHAIN_FILE="conan_toolchain.cmake"
 cmake --build . --config Release
-
-# Run the examples:
-
 ./Release/tinkerforgePiano
-...
-./Release/tinkerforgePiano
-...
 ```
 
 **Linux/macOS**
@@ -46,11 +40,5 @@ cmake --build . --config Release
 ```
 cmake .. -G "Unix Makefiles" -DCMAKE_TOOLCHAIN_FILE=conan_toolchain.cmake
 cmake --build .
-
-# Run the examples:
-
 ./tinkerforgePiano
-...
-./tinkerforgePiano
-...
 ```
