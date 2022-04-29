@@ -1,8 +1,5 @@
 # tinkerforge-piano
-
-## Tinkerforge dc-motor example using Conan C/C++ Package Manager
-
-This repo shows how to build Tinkerforge's [C/C++ example for DC brick](https://www.tinkerforge.com/en/doc/Software/Bricks/DC_Brick_C.html#dc-brick-c-examples) using Conan C/C++ Package Manager.
+This repo houses the code used to build a Tinkerforge piano using Conan C/C++ Package Manager.
 
 ### Requirements
 
@@ -22,7 +19,7 @@ mkdir build && cd build
 ```
 
 Install `tinkerforge-bindings/2.1.32` package from [ConanCenter](https://conan.io/center/tinkerforge-bindings).
-This package includes de C/C++ API bindings from [Tinkerforge](https://www.tinkerforge.com/):
+This package includes C/C++ API bindings from [Tinkerforge](https://www.tinkerforge.com/):
 
 ```
 conan install ../conanfile.txt --build=missing
@@ -33,14 +30,14 @@ Configure the project and build the examples using CMake build system:
 **Windows / Visual Studio**
 
 ```
-cmake .. -G "Visual Studio 15" -DCMAKE_TOOLCHAIN_FILE=conan_toolchain.cmake
+cmake .. -G "Visual Studio 16" -DCMAKE_TOOLCHAIN_FILE="conan_toolchain.cmake"
 cmake --build . --config Release
 
 # Run the examples:
 
-Release/example_configuration.exe
+./Release/tinkerforgePiano
 ...
-Release/example_callback.exe
+./Release/tinkerforgePiano
 ...
 ```
 
@@ -52,8 +49,8 @@ cmake --build .
 
 # Run the examples:
 
-./example_configuration
+./tinkerforgePiano
 ...
-./example_callback
+./tinkerforgePiano
 ...
 ```
