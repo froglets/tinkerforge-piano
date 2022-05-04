@@ -20,6 +20,10 @@ Tools installed on your machine and hardware necessary to run the examples:
   - 1 USB-C to USB-C Cable 200cm
 
 ### Building the examples
+Clone the git repository:
+```
+git clone https://github.com/froglets/tinkerforge-piano.git
+```
 
 Create a `build` directory and change to it:
 
