@@ -23,6 +23,7 @@ Tools installed on your machine and hardware necessary to run the examples:
 Clone the git repository:
 ```
 git clone https://github.com/froglets/tinkerforge-piano.git
+cd tinkerforge-piano
 ```
 
 Create a `build` directory and change to it:
