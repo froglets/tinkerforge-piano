@@ -18,6 +18,8 @@ Tools installed on your machine and hardware necessary to run the examples:
   - 1 LCD 128x64 Bricket 2.0
   - 5 Bricklet Cables 15cm (7p-7p)
   - 1 USB-C to USB-C Cable 200cm
+  - 4 Mounting Kits 12mm
+  - 1 Mounting Plate 22x22 (12x12cm)
 
 ### Building the examples
 Clone the git repository:
